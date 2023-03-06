@@ -18,7 +18,6 @@ export class HomeComponent {
 
   updateSelection(self: HomeComponent) {
     return function() {
-      console.log(self.selectedIndex);
       if (self.selectedIndex == self.homeSliderArray.length - 1) {
         self.selectedIndex = 0;
       } else {
