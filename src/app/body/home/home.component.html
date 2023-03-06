@@ -1,0 +1,25 @@
+<!-- <img src="assets/img/home_banner.jpg" width="100%" /> -->
+
+<mat-card class="home_card">
+    <!-- <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>Shiba Inu</mat-card-title>
+      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+    </mat-card-header> -->
+    <div class="container">
+        <div class="img-container"  *ngFor="let i of homeSliderArray; let select = index;"
+             [hidden]="select != selectedIndex">
+          <img src="{{i.img}}" alt="{{i.alt}}" width="100%" />
+        </div>
+       
+       </div>
+    <mat-card-content>
+      <p>
+        {{homeSliderArray[selectedIndex].text}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button style="font-variant-caps: small-caps;" color="accent">Volunteer</button> &nbsp; &nbsp;
+      <button mat-raised-button style="font-variant-caps: small-caps;" color="primary">Donate</button>
+    </mat-card-actions>
+  </mat-card>

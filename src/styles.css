@@ -1,1 +1,85 @@
 /* You can add global styles to this file, and also import other style files */
+span#header {
+    font-variant-caps: small-caps;
+    font-size: xx-large;
+    color: navy;
+}
+/* div#root-container {
+    width: calc(100% - 50px);
+    width: -webkit-calc(100% - 50px);
+    width: -moz-calc(100% - 50px); */
+    /* max-width: 1750px; */
+/*     min-width: 200px;
+ */
+    /* min-height: 100px; */
+/*     margin-left: auto;
+    margin-right: auto;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+div#navbar {
+    background-color: white;
+    min-height: 120px;
+    width: 100%;
+    display: flex;
+}
+
+div#navbar > div#navbar-left{
+    background-color: white;
+    min-height: 50px;
+    margin-left: 36px;
+    margin-right: 36px;
+    margin-top: auto;
+    margin-bottom: auto;
+    flex: none;
+}
+
+div#navbar > div#navbar-center{
+    background-color: white;
+    min-height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    flex: none;
+}
+
+div#navbar > div#navbar-right{
+    background-color: white;
+    min-height: 50px;
+    margin-left: auto;
+    margin-right: 5px;
+    flex: none;
+    padding-top: auto; */
+    /* padding-bottom: 35px; */
+/* }
+div#navbar > div#navbar-right > a {
+    text-decoration: none;
+}
+ */
+html, body, psh-root {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+/* psh-root {
+    height: 100%;
+    position: relative;
+}
+psh-body {
+    min-height: -webkit-calc(100% - 320px);
+    min-height: -moz-calc(100% - 320px);
+    min-height: calc(100% - 320px);
+    height: auto !important;
+}
+psh-footer
+{
+    background-color: #004669;
+    font-size: 0.7em;
+    color: navy;
+    position: relative;
+    height: 4em;
+} */

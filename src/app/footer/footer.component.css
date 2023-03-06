@@ -1,0 +1,22 @@
+h1.footer_heading {
+    font-variant-caps: small-caps;
+    border-bottom: 2px solid goldenrod;
+}
+
+div.footer_container {
+    height: 100%;
+    width: auto;
+}
+
+mat-toolbar {
+    background-color: navy;
+    color: white;
+    text-align: left;
+}
+
+span,a {
+    color: white;
+    text-decoration: none;
+    font-size: small;
+    font-weight: lighter;
+}
