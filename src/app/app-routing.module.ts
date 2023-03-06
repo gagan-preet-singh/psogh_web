@@ -16,7 +16,7 @@ import { VolunteerComponent } from './body/involve/volunteer/volunteer.component
 import { LeadershipComponent } from './body/leadership/leadership.component';
 
 const routes: Routes = [
-  {path: 'home', component: HomeComponent},
+  // {path: 'home', component: HomeComponent},
 
   {path: 'about/mission', component: MissionComponent},
   {path: 'about/activities', component: ActivitiesComponent},
@@ -38,8 +38,8 @@ const routes: Routes = [
   {path: 'gallery', component: GalleryComponent},
   {path: 'contact', component: ContactComponent},
 
-  {path: '', redirectTo: 'home', pathMatch: 'full'},
-  {path: '**', redirectTo: 'home'}
+  {path: '', component: HomeComponent, pathMatch: 'full'},
+  {path: '**', redirectTo: ''}
 ];
 
 @NgModule({
