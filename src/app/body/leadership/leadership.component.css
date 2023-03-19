@@ -1,0 +1,7 @@
+.example-card {
+    min-width: 100%;
+    margin: 40px;
+}
+.cards {
+    max-width: 320px;
+}

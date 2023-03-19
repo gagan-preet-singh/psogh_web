@@ -1,15 +1,15 @@
 <mat-toolbar style="height: 120px;">
-  <img src="https://www.sussexindianpunjabisociety.com/wp-content/uploads/2021/03/ReviewsLogo.jpg" height="120px" />
-  <span id="header" style="padding-left: 25px;">Punjabi Society of Greater Houston Area</span>
+  <img src="./assets/img/punjabi societyof greater houston.png" height="120px" />
+  <span id="header" style="padding-left: 25px;">Punjabi Society of Greater Houston</span>
   <span style="flex: 1 1 auto;"></span>
-  <button mat-button routerLink="" style="font-variant-caps: small-caps;" (mouseover)="getInvolvedTrigger.closeMenu(); aboutTrigger.closeMenu()" routerLinkActive="link_primary">Home</button>
+  <button mat-button routerLink="home" style="font-variant-caps: small-caps;" (mouseover)="getInvolvedTrigger.closeMenu(); aboutTrigger.closeMenu()" routerLinkActive="link_primary">Home</button>
   <button mat-button [matMenuTriggerFor]="about" style="font-variant-caps: small-caps;" #aboutTrigger="matMenuTrigger" (mouseover)="aboutTrigger.openMenu(); getInvolvedTrigger.closeMenu()" routerLinkActive="link_primary" routerLink="/about/">About</button>
   <mat-menu #about="matMenu" xPosition="after" yPosition="below" [hasBackdrop]="false" [overlapTrigger]="false">
     <span (mouseleave)="aboutTrigger.closeMenu()">
       <button mat-menu-item routerLink="/about/mission" style="font-variant-caps: small-caps;">Mission & Vision</button>
-      <button mat-menu-item routerLink="/about/activities" style="font-variant-caps: small-caps;">Activities & Roles</button>
+      <!-- <button mat-menu-item routerLink="/about/activities" style="font-variant-caps: small-caps;">Activities & Roles</button>
       <button mat-menu-item routerLink="/about/history" style="font-variant-caps: small-caps;">History</button>
-      <button mat-menu-item routerLink="/about/blogs" style="font-variant-caps: small-caps;">Blogs</button>
+      <button mat-menu-item routerLink="/about/blogs" style="font-variant-caps: small-caps;">Blogs</button> -->
       <button mat-menu-item routerLink="/about/by_laws" style="font-variant-caps: small-caps;">By Laws</button>
     </span>
   </mat-menu>
@@ -21,7 +21,7 @@
       <button mat-menu-item routerLink="/involve/events" style="font-variant-caps: small-caps;">Events</button>
       <button mat-menu-item routerLink="/involve/booth" style="font-variant-caps: small-caps;">Booth</button>
       <button mat-menu-item routerLink="/involve/sponsorship" style="font-variant-caps: small-caps;">Sponsorship</button>
-      <button mat-menu-item routerLink="/involve/become_member" style="font-variant-caps: small-caps;">Become A Member</button>
+      <!-- <button mat-menu-item routerLink="/involve/become_member" style="font-variant-caps: small-caps;">Become A Member</button> -->
     </span>
   </mat-menu>
   <button mat-button routerLink="/gallery" style="font-variant-caps: small-caps;" (mouseover)="getInvolvedTrigger.closeMenu(); aboutTrigger.closeMenu()" routerLinkActive="link_primary">Gallery</button>

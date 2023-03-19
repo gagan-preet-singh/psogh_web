@@ -1,1 +1,18 @@
-<p>leadership works!</p>
+<div id="container" style="display:flex; flex-direction: row; flex-wrap: wrap;">
+    <mat-card *ngFor="let member of members" style="margin-top: 10px; margin-left: 20px; margin-right: 20px; width: 200px;">
+        <mat-card-header>
+            <mat-card-title>{{member.name}}</mat-card-title>
+            <mat-card-subtitle *ngIf="member.title != ''">{{member.title}}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image [src]="member.img || 'https://www.pngitem.com/pimgs/m/618-6183618_transparent-unknown-person-png-transparent-background-female-user.png'" alt="Photo of {{member.name}}">
+        <mat-card-content  *ngIf="member.content != ''">
+            <p>{{member.content}}</p>
+        </mat-card-content>
+        <mat-card-actions *ngIf="member.email != ''">
+            <a href="mailto:{{member.email}}" mat-button extended style="font-weight: 400; font-size: xx-small;"><mat-icon>mail</mat-icon> {{member.email}}</a>
+        </mat-card-actions>
+        <mat-card-actions *ngIf="member.phone != ''">
+                <a href="tel:{{member.phone}}" mat-button extended style="font-weight: 300; font-size: xx-small;"><mat-icon>phone</mat-icon> {{member.phone}}</a>
+        </mat-card-actions>
+    </mat-card>
+</div>

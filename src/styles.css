@@ -4,6 +4,13 @@ span#header {
     font-size: xx-large;
     color: navy;
 }
+
+div#container {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* div#root-container {
     width: calc(100% - 50px);
     width: -webkit-calc(100% - 50px);

@@ -1,47 +1,75 @@
 <!-- <img src="assets/img/home_banner.jpg" width="100%" /> -->
 
-<mat-card class="home_card">
-  <div class="container">
-    <div
-        class="img-container"
-        *ngFor="let i of homeSliderArray; let select = index;"
-        [hidden]="select != selectedIndex"
-    >
-      <img src="{{i.img}}" alt="{{i.alt}}" width="100%" />
+<mat-card>
+  <mat-card-actions>
+    <span style="flex: 1 1 auto;"></span>
+    <span style="flex: 1 1 auto;"></span>
+    <div class="landing_icons">
+      <a mat-fab extended color="primary">
+        <mat-icon>volunteer_activism</mat-icon>
+        Get Involved
+      </a>
     </div>
-  </div>
+    <span style="flex: 1 1 auto;"></span>
+    <div class="landing_icons">
+      <a mat-fab extended color="accent">
+        <mat-icon>attach_money</mat-icon>
+        Donate
+      </a>
+    </div>
+    <span style="flex: 1 1 auto;"></span>
+    <div class="landing_icons">
+      <a mat-fab extended color="link">
+        <mat-icon>volunteer_activism</mat-icon>
+        Sponsor
+      </a>
+    </div>
+    <span style="flex: 1 1 auto;"></span>
+    <span style="flex: 1 1 auto;"></span>
+  </mat-card-actions>
+</mat-card>
+
+<mat-card class="home_card">
+  <gallery
+    id="homeGallery"
+    [thumbTemplate]="thumbTemplate"
+    [itemTemplate]="itemTemplate"
+    [playerInterval]="playInterval"
+    [autoPlay]="autoPlay"
+    [thumb]="thumb"
+    loadingStrategy="preload"
+  ></gallery>
+
+  <ng-template #thumbTemplate let-type="type">
+  <span *ngIf="type === 'youtube'" class="item-type">
+      <span size="lg">fa-youtube</span>
+  </span>
+  <span *ngIf="type === 'video'" class="item-type">
+      <!-- <fa-icon icon="faVideo" size="lg"></fa-icon> -->
+  </span>
+  </ng-template>
+  <ng-template #itemTemplate
+              let-index="index"
+              let-type="type"
+              let-data="data"
+              let-currIndex="currIndex"
+              let-isActive="isActive">
+  <span *ngIf="type === 'image' && isActive" [@slideAnimation] class="item-text">
+      {{data?.title}}
+  </span>
+  </ng-template>
   <mat-card-content>
-    <p>
-      {{homeSliderArray[selectedIndex].text}}
-    </p>
+    <span style="flex: 1 1 auto;"></span>
+    <div style="text-align: center;">
+      <!-- <span class="moto">
+        {{homeSliderArray[selectedIndex].text}}
+      </span> -->
+    </div>
+    <span style="flex: 1 1 auto;"></span>
   </mat-card-content>
   <mat-card-actions>
     <span style="flex: 1 1 auto;"></span>
     <button mat-raised-button style="font-variant-caps: small-caps;" color="accent">Volunteer</button> &nbsp; &nbsp;
     <button mat-raised-button style="font-variant-caps: small-caps;" color="primary">Donate</button>
-  </mat-card-actions>
-</mat-card>
-
-<mat-card>
-  <mat-card-actions>
-    <span style="flex: 1 1 auto;"></span>
-    <div class="landing_icons">
-      <button mat-fab color="green">
-        <mat-icon>volunteer_activism</mat-icon>
-      </button>
-    </div>
-    <span style="flex: 1 1 auto;"></span>
-    <div class="landing_icons">
-      <button mat-fab color="green">
-        <mat-icon>attach_money</mat-icon>
-      </button>
-    </div>
-    <span style="flex: 1 1 auto;"></span>
-    <div class="landing_icons">
-      <button mat-fab color="green">
-        <mat-icon>volunteer_activism</mat-icon>
-      </button>
-    </div>
-    <span style="flex: 1 1 auto;"></span>
   </mat-card-actions>
 </mat-card>

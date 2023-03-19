@@ -1,1 +1,36 @@
-<p>contact works!</p>
+<div id="container">
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>
+                Contact Us
+            </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <mat-form-field appearance="fill" style="width: 100%">
+                <mat-label>Full Name</mat-label>
+                <input matInput type="text" name="name" placeholder="Name" [formControl]="name">
+            </mat-form-field>
+            <mat-form-field appearance="fill" style="width: 100%">
+                <mat-label>Email</mat-label>
+                <input matInput type="email" name="email" aria-describedby="emailHelp" placeholder="Enter email" [formControl]="email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </mat-form-field>
+            <mat-form-field appearance="fill" style="width: 100%">
+                <mat-label>Phone Number</mat-label>
+                <input matInput type="text" name="phone" placeholder="Contact number" [formControl]="phone">
+            </mat-form-field>
+            <mat-form-field style="width: 100%; height: 100px;">
+                <mat-label>Comments</mat-label>
+                <textarea matInput [formControl]="comment" name="comment"></textarea>
+            </mat-form-field>
+            <input type="hidden" name="_subject" [formControl]="subject">
+            <input type="hidden" name="_honeypot" [formControl]="honeypot">
+            <!--
+            <input type="hidden" name="_confirmation" value="">
+        -->
+        </mat-card-content>
+        <mat-card-actions>
+            <button type="submit" class="btn btn-primary" [disabled]="!formValid" (click)="onSubmit()">Submit</button>
+        </mat-card-actions>
+    </mat-card>
+</div>

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Gallery, GalleryRef } from 'ng-gallery';
 
 interface img_meta {
   img: string,
@@ -11,27 +12,53 @@ interface img_meta {
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent {
-  homeSliderArray: img_meta[];
-  selectedIndex: number = 0;
-  intervalId: any;
+export class HomeComponent implements OnInit {
+  galleryId = 'homeGallery';
+  playInterval = 5000;
+  autoPlay = true;
+  thumb = false;
 
-  updateSelection(self: HomeComponent) {
-    return function() {
-      if (self.selectedIndex == self.homeSliderArray.length - 1) {
-        self.selectedIndex = 0;
-      } else {
-        self.selectedIndex += 1;
-      }
-    }
+  constructor(private _gallery: Gallery) {
+    console.log(this._gallery);
   }
 
-  constructor() {
-    this.homeSliderArray = [
-      {img: 'assets/img/home_banner.jpg', alt: 'Punjabi Society of Greater Houston Area wishes you Happy Vaisakhi!', text: 'Our Motto is to be the best!'},
-      {img: 'assets/img/home_banner.jpg', alt: 'Punjabi Society of Greater Houston Area wishes you Happy Vaisakhi!', text: 'Punjabi Society of Greater Houston Area wishes you Happy Vaisakhi!'},
-    ];
-    this.intervalId = setInterval(this.updateSelection(this), 10000);
+  ngOnInit(): void {
+    const galleryRef: GalleryRef = this._gallery.ref(this.galleryId);
+    // galleryRef.addImage({
+    //   src: 'https://drive.google.com/uc?id=' + image_id,
+    //   thumb: 'https://drive.google.com/uc?id=' + image_id
+    // });
+    galleryRef.addImage({
+      src: 'assets/img/home_banner.jpg',
+      thumb: 'assets/img/home_banner.jpg',
+      title: 'Uniting Punjabis, Strengthening Communities'
+    });
+    galleryRef.addImage({
+      src: 'assets/img/home_banner.jpg',
+      thumb: 'assets/img/home_banner.jpg',
+      title: 'Preserving Our Heritage, Building Our Future'
+    });
+    galleryRef.addImage({
+      src: 'assets/img/home_banner.jpg',
+      thumb: 'assets/img/home_banner.jpg',
+      title: 'Celebrating Culture, Empowering People'
+    });
+    galleryRef.addImage({
+      src: 'assets/img/home_banner.jpg',
+      thumb: 'assets/img/home_banner.jpg',
+      title: 'From Punjab to Houston, Together We Thrive'
+    });
+    galleryRef.addImage({
+      src: 'assets/img/home_banner.jpg',
+      thumb: 'assets/img/home_banner.jpg',
+      title: 'Bridging Cultures, Building Bonds'
+    });
+    galleryRef.addImage({
+      src: 'assets/img/home_banner.jpg',
+      thumb: 'assets/img/home_banner.jpg',
+      title: 'One Community, One Voice, One Vision'
+    });
+
   }
 
 }

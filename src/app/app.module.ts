@@ -1,9 +1,17 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
+import 'hammerjs';
+import { GalleryModule, GALLERY_CONFIG } from 'ng-gallery';
+import { LightboxModule, LIGHTBOX_CONFIG } from 'ng-gallery/lightbox';
 
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
+import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatIconModule} from '@angular/material/icon';
+import {MatInputModule} from '@angular/material/input';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatToolbarModule} from '@angular/material/toolbar';
 
@@ -26,8 +34,9 @@ import { EventsComponent } from './body/involve/events/events.component';
 import { BoothComponent } from './body/involve/booth/booth.component';
 import { SponsorshipComponent } from './body/involve/sponsorship/sponsorship.component';
 import { MemberComponent } from './body/involve/member/member.component';
-import { GalleryComponent } from './body/gallery/gallery.component';
+import { GalleryPageComponent } from './body/gallery/gallery.component';
 import { ContactComponent } from './body/contact/contact.component';
+import { ContactService } from './body/contact/contact.service';
 
 @NgModule({
   declarations: [
@@ -48,21 +57,43 @@ import { ContactComponent } from './body/contact/contact.component';
     BoothComponent,
     SponsorshipComponent,
     MemberComponent,
-    GalleryComponent,
+    GalleryPageComponent,
     ContactComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+
+    GalleryModule,
+    LightboxModule,
 
     MatButtonModule,
     MatCardModule,
+    MatFormFieldModule,
     MatIconModule,
+    MatInputModule,
     MatMenuModule,
-    MatToolbarModule,
-    BrowserAnimationsModule
+    MatToolbarModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: GALLERY_CONFIG,
+      useValue: {
+        dots: true,
+        imageSize: 'cover'
+      }
+    },
+    {
+      provide: LIGHTBOX_CONFIG,
+      useValue: {
+        keyboardShortcuts: false
+      }
+    },
+    ContactService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

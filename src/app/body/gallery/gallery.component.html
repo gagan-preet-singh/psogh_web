@@ -1,1 +1,40 @@
 <p>gallery works!</p>
+
+<div id='gallery_container'>
+    <gallery
+        gallerize
+        id="mainGallery"
+        [thumbTemplate]="thumbTemplate"
+        [itemTemplate]="itemTemplate"
+        loadingStrategy="preload"
+    ></gallery>
+
+    <ng-template #thumbTemplate let-type="type">
+    <span *ngIf="type === 'youtube'" class="item-type">
+        <span size="lg">fa-youtube</span>
+    </span>
+    <span *ngIf="type === 'video'" class="item-type">
+        <!-- <fa-icon icon="faVideo" size="lg"></fa-icon> -->
+    </span>
+    </ng-template>
+    <ng-template #itemTemplate
+                let-index="index"
+                let-type="type"
+                let-data="data"
+                let-currIndex="currIndex"
+                let-isActive="isActive">
+    <!-- <span *ngIf="type === 'image' && isActive" [@slideAnimation] class="item-text">
+        {{data?.title}}
+    </span> -->
+    </ng-template>
+
+    
+    <div class="grid">
+        <div class="grid-item"
+        *ngFor="let item of gallery_images; let i = index"
+        [lightbox]="i"
+        [gallery]="galleryId2">
+            <img [src]="item.data?.thumb" style="max-width: 200px;">
+        </div>
+    </div>
+</div>
