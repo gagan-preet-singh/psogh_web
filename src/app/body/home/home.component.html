@@ -45,7 +45,8 @@
       <span size="lg">fa-youtube</span>
   </span>
   <span *ngIf="type === 'video'" class="item-type">
-      <!-- <fa-icon icon="faVideo" size="lg"></fa-icon> -->
+    <span size="lg">fa-play</span>
+    <!-- <fa-icon icon="faVideo" size="lg"></fa-icon> -->
   </span>
   </ng-template>
   <ng-template #itemTemplate
@@ -53,7 +54,9 @@
               let-type="type"
               let-data="data"
               let-currIndex="currIndex"
-              let-isActive="isActive">
+              let-isActive="isActive"
+              let-play="play"
+              let-pause="pause">
   <span *ngIf="type === 'image' && isActive" [@slideAnimation] class="item-text">
       {{data?.title}}
   </span>
