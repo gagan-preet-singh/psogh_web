@@ -63,8 +63,9 @@ export class HomeComponent implements OnInit {
     galleryRef.addVideo({
       src: [{ url: 'https://drive.google.com/uc?id=1DJuyI-uqzj3di1RvlL4bE0wV8T81_EYf', type: 'video/mp4' }] as any,
       disablePictureInPicture: true,
-      controls: false,
+      controls: true,
       autoplay: true,
+      loop: true,
     })
 
   }

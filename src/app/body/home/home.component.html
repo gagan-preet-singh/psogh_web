@@ -1,27 +1,27 @@
 <!-- <img src="assets/img/home_banner.jpg" width="100%" /> -->
 
-<mat-card>
-  <mat-card-actions>
+<mat-card style="height: 50px; margin-top: 52px;">
+  <mat-card-actions style="vertical-align: middle;">
     <span style="flex: 1 1 auto;"></span>
     <span style="flex: 1 1 auto;"></span>
     <div class="landing_icons">
-      <a mat-fab extended color="primary">
+      <a mat-fab extended color="link" style="height: 35px; background-color: navy; color: white;" routerLink="/involve/volunteer">
         <mat-icon>volunteer_activism</mat-icon>
         Get Involved
       </a>
     </div>
     <span style="flex: 1 1 auto;"></span>
     <div class="landing_icons">
-      <a mat-fab extended color="accent">
+      <a mat-fab extended color="link" style="height: 35px; background-color: #ED5B01; color: white;" routerLink="/involve/sponsorship">
         <mat-icon>attach_money</mat-icon>
         Donate
       </a>
     </div>
     <span style="flex: 1 1 auto;"></span>
     <div class="landing_icons">
-      <a mat-fab extended color="link">
-        <mat-icon>volunteer_activism</mat-icon>
-        Sponsor
+      <a mat-fab extended color="link" style="height: 35px; background-color: darkgreen; color: white;" routerLink="/involve/booth">
+        <mat-icon>shop</mat-icon>
+        Booth Signup
       </a>
     </div>
     <span style="flex: 1 1 auto;"></span>
@@ -70,9 +70,35 @@
     </div>
     <span style="flex: 1 1 auto;"></span>
   </mat-card-content>
+</mat-card>
+
+
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>Vaisakhi Indoor Mela 2023</mat-card-title>
+    <mat-card-subtitle>Sunday, April 23 2023 - 5 PM to 10 PM</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <img src="https://drive.google.com/uc?id=18wQOwZf4p8xFtsymw69nUK31QrUasrrJ" width="100%">
+  </mat-card-content>
   <mat-card-actions>
-    <span style="flex: 1 1 auto;"></span>
-    <button mat-raised-button style="font-variant-caps: small-caps;" color="accent">Volunteer</button> &nbsp; &nbsp;
-    <button mat-raised-button style="font-variant-caps: small-caps;" color="primary">Donate</button>
+      <span style="flex: 1 1 auto;"></span>
+      <span style="flex: 1 1 auto;"></span>
+      <a mat-fab extended color="accent" href="https://form.jotform.com/230694361451152">
+          <mat-icon>storefront</mat-icon>
+          Booths
+      </a>
+      <span style="flex: 1 1 auto;"></span>
+      <a mat-fab extended color="primary" href="https://www.eventbrite.com/e/vaisakhi-mela-2023-tickets-571167516417">
+          <mat-icon>confirmation_number</mat-icon>
+          Tickets
+      </a>
+      <span style="flex: 1 1 auto;"></span>
+      <a mat-fab extended color="accent" href="https://form.jotform.com/92910752621152">
+          <mat-icon>person_play</mat-icon>
+          Participate
+      </a>
+      <span style="flex: 1 1 auto;"></span>
+      <span style="flex: 1 1 auto;"></span>
   </mat-card-actions>
 </mat-card>

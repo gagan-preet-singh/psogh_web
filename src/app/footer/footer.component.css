@@ -1,6 +1,10 @@
 h1.footer_heading {
-    font-variant-caps: small-caps;
+    /* font-variant-caps: small-caps; */
     border-bottom: 2px solid goldenrod;
+    width: fit-content;
+    font-size: 18px;
+    /* text-decoration: 2px underline goldenrod; */
+    /* padding-bottom: 5px; */
 }
 
 div.footer_container {

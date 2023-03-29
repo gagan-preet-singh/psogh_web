@@ -13,7 +13,7 @@ export class LeadershipComponent {
       email: '',
       title: '',
       content: '',
-      img: ''
+      // img: ''
     },
     {
       name: 'Aman Sidhu',
@@ -21,7 +21,7 @@ export class LeadershipComponent {
       email: 'Amansidhu1418@gmail.com',
       title: '',
       content: '',
-      img: ''
+      // img: ''
     },
     {
       name: 'Bobby Kaur',
@@ -29,7 +29,7 @@ export class LeadershipComponent {
       email: '',
       title: '',
       content: '',
-      img: ''
+      // img: ''
     },
     {
       name: 'Rupy Kaur',
@@ -37,7 +37,7 @@ export class LeadershipComponent {
       email: '',
       title: '',
       content: '',
-      img: ''
+      // img: ''
     },
     {
       name: 'Gagan Singh',
@@ -45,7 +45,7 @@ export class LeadershipComponent {
       email: '',
       title: '',
       content: '',
-      img: ''
+      // img: ''
     },
     {
       name: 'Kavneet Kaur',
@@ -53,7 +53,7 @@ export class LeadershipComponent {
       email: '',
       title: '',
       content: '',
-      img: ''
+      // img: ''
     },
     {
       name: 'Gurpreet Singh',
@@ -61,7 +61,7 @@ export class LeadershipComponent {
       email: '',
       title: '',
       content: '',
-      img: ''
+      // img: ''
     },
     {
       name: 'Jasleen Kaur',
@@ -69,7 +69,7 @@ export class LeadershipComponent {
       email: '',
       title: '',
       content: '',
-      img: ''
+      // img: ''
     },
     {
       name: 'Seema Bhatia',
@@ -77,7 +77,7 @@ export class LeadershipComponent {
       email: '',
       title: '',
       content: '',
-      img: ''
+      // img: ''
     },
     {
       name: 'Harmeet Singh',
@@ -85,7 +85,7 @@ export class LeadershipComponent {
       email: '',
       title: '',
       content: '',
-      img: ''
+      // img: ''
     },
     {
       name: 'Nikki Singh',
@@ -93,7 +93,7 @@ export class LeadershipComponent {
       email: '',
       title: '',
       content: '',
-      img: ''
+      // img: ''
     },
     {
       name: 'Amarpreet Kaur',
@@ -101,7 +101,7 @@ export class LeadershipComponent {
       email: '',
       title: '',
       content: '',
-      img: ''
+      // img: ''
     },
     {
       name: 'Gurmeet Kindra',
@@ -109,7 +109,7 @@ export class LeadershipComponent {
       email: '',
       title: '',
       content: '',
-      img: ''
+      // img: ''
     },
     {
       name: 'Raman Johar',
@@ -117,23 +117,23 @@ export class LeadershipComponent {
       email: '',
       title: '',
       content: '',
-      img: ''
-    },
-    {
-      name: 'Preet Kaur',
-      phone: '',
-      email: '',
-      title: '',
-      content: '',
-      img: ''
-    },
-    {
-      name: 'Vicky Cheema',
-      phone: '',
-      email: '',
-      title: '',
-      content: '',
-      img: ''
+      // img: ''
+    // },
+    // {
+    //   name: 'Preet Kaur',
+    //   phone: '',
+    //   email: '',
+    //   title: '',
+    //   content: '',
+    //   img: ''
+    // },
+    // {
+    //   name: 'Vicky Cheema',
+    //   phone: '',
+    //   email: '',
+    //   title: '',
+    //   content: '',
+    //   img: ''
     // },
     // {
     //   name: 'Person 1',
