@@ -4,7 +4,7 @@
             <mat-card-title>{{member.name}}</mat-card-title>
             <mat-card-subtitle *ngIf="member.title != ''">{{member.title}}</mat-card-subtitle>
         </mat-card-header>
-        <img mat-card-image [src]="member.img || 'https://www.pngitem.com/pimgs/m/618-6183618_transparent-unknown-person-png-transparent-background-female-user.png'" alt="Photo of {{member.name}}">
+        <!-- <img mat-card-image [src]="member.img || 'https://www.pngitem.com/pimgs/m/618-6183618_transparent-unknown-person-png-transparent-background-female-user.png'" alt="Photo of {{member.name}}"> -->
         <mat-card-content  *ngIf="member.content != ''">
             <p>{{member.content}}</p>
         </mat-card-content>
