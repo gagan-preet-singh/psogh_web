@@ -6,6 +6,8 @@ import { HttpClientModule } from '@angular/common/http';
 import 'hammerjs';
 import { GalleryModule, GALLERY_CONFIG } from 'ng-gallery';
 import { LightboxModule, LIGHTBOX_CONFIG } from 'ng-gallery/lightbox';
+// import { PdfViewerModule } from 'ng2-pdf-viewer';
+// import { PdfJsViewerModule } from 'ng2-pdfjs-viewer';
 
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
@@ -69,6 +71,8 @@ import { ContactService } from './body/contact/contact.service';
 
     GalleryModule,
     LightboxModule,
+    // PdfViewerModule,
+    // PdfJsViewerModule,
 
     MatButtonModule,
     MatCardModule,

@@ -109,16 +109,22 @@ export class GalleryPageComponent implements OnInit {
     for (let _i = 0; _i < images.length; _i++) {
       const image_id = images[_i];
       galleryRef.addImage({
+        // src: "https://drive.google.com/thumbnail?sz=w1000&id="+image_id,
         src: 'https://drive.google.com/uc?id=' + image_id,
+        // thumb: "https://drive.google.com/thumbnail?sz=w200&id="+image_id
         thumb: 'https://drive.google.com/uc?id=' + image_id
       });
       galleryRef2.addImage({
+        // src: "https://drive.google.com/thumbnail?sz=w1000&id="+image_id,
         src: 'https://drive.google.com/uc?id=' + image_id,
+        // thumb: "https://drive.google.com/thumbnail?sz=w200&id="+image_id
         thumb: 'https://drive.google.com/uc?id=' + image_id
       });
       this.gallery_images[_i] = {
         data: {
+          // src: "https://drive.google.com/thumbnail?sz=w1000&id="+image_id,
           src: 'https://drive.google.com/uc?id=' + image_id,
+          // thumb: "https://drive.google.com/thumbnail?sz=w200&id="+image_id
           thumb: 'https://drive.google.com/uc?id=' + image_id
         },
         type: 'images'
