@@ -1,12 +1,10 @@
-<p>gallery works!</p>
-
 <div id='gallery_container'>
     <gallery
         gallerize
         id="mainGallery"
         [thumbTemplate]="thumbTemplate"
         [itemTemplate]="itemTemplate"
-        loadingStrategy="preload"
+        loadingStrategy="lazy"
     ></gallery>
 
     <ng-template #thumbTemplate let-type="type">

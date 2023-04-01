@@ -2,6 +2,9 @@
   <img src="./assets/img/photo_2023-03-18_19-07-32.jpg" height="120px" />
   <span id="header" style="padding-left: 25px;">Punjabi Society of Greater Houston</span>
   <span style="flex: 1 1 auto;"></span>
+</mat-toolbar>
+<mat-toolbar style="height: 120px;">
+  <span style="flex: 1 1 auto;"></span>
   <button mat-button routerLink="home" style="font-variant-caps: small-caps;" (mouseover)="getInvolvedTrigger.closeMenu(); aboutTrigger.closeMenu()" routerLinkActive="link_primary">Home</button>
   <button mat-button [matMenuTriggerFor]="about" style="font-variant-caps: small-caps; font-size: medium;" #aboutTrigger="matMenuTrigger" (mouseover)="aboutTrigger.openMenu(); getInvolvedTrigger.closeMenu()" routerLinkActive="link_primary" routerLink="/about/">About</button>
   <mat-menu #about="matMenu" xPosition="after" yPosition="below" [hasBackdrop]="false" [overlapTrigger]="false">
@@ -26,4 +29,5 @@
   </mat-menu>
   <button mat-button routerLink="/gallery" style="font-variant-caps: small-caps;" (mouseover)="getInvolvedTrigger.closeMenu(); aboutTrigger.closeMenu()" routerLinkActive="link_primary">Gallery</button>
   <button mat-button routerLink="/contact" style="font-variant-caps: small-caps;" (mouseover)="getInvolvedTrigger.closeMenu(); aboutTrigger.closeMenu()" routerLinkActive="link_primary">Contact</button>
+  <span style="flex: 1 1 auto;"></span>
 </mat-toolbar>

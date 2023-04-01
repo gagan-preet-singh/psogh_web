@@ -19,6 +19,9 @@ export class HomeComponent implements OnInit {
   thumb = false;
   play = true;
   pause = false;
+  nav: boolean = false;
+  counter: boolean = false;
+  mute: boolean = true;
 
   constructor(private _gallery: Gallery) {
     console.log(this._gallery);

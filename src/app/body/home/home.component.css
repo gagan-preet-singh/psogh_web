@@ -41,3 +41,15 @@ div.landing_icons {
     color: black;
     border-radius: 8px;
 }
+
+.example-card {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+  
+/* .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+} */

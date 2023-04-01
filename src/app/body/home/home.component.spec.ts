@@ -5,6 +5,8 @@ import { HomeComponent } from './home.component';
 describe('HomeComponent', () => {
   let component: HomeComponent;
   let fixture: ComponentFixture<HomeComponent>;
+  let nav: boolean = false;
+  let counter: boolean = false;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({

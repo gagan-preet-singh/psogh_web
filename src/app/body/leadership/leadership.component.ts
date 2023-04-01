@@ -9,7 +9,7 @@ export class LeadershipComponent {
   members = [
     {
       name: 'Jasmeeta Singh',
-      phone: '+1 (281) 849-3634',
+      phone: '',
       email: '',
       title: '',
       content: '',
@@ -18,7 +18,7 @@ export class LeadershipComponent {
     {
       name: 'Aman Sidhu',
       phone: '',
-      email: 'Amansidhu1418@gmail.com',
+      email: '',
       title: '',
       content: '',
       // img: ''
@@ -32,7 +32,7 @@ export class LeadershipComponent {
       // img: ''
     },
     {
-      name: 'Rupy Kaur',
+      name: 'Rupinder Kaur',
       phone: '',
       email: '',
       title: '',
@@ -40,7 +40,7 @@ export class LeadershipComponent {
       // img: ''
     },
     {
-      name: 'Gagan Singh',
+      name: 'Gagan Preet Singh',
       phone: '',
       email: '',
       title: '',
@@ -80,7 +80,7 @@ export class LeadershipComponent {
       // img: ''
     },
     {
-      name: 'Harmeet Singh',
+      name: 'Mohan Singh',
       phone: '',
       email: '',
       title: '',
@@ -104,7 +104,7 @@ export class LeadershipComponent {
       // img: ''
     },
     {
-      name: 'Gurmeet Kindra',
+      name: 'Kamaljeet Singh Otal',
       phone: '',
       email: '',
       title: '',
@@ -113,6 +113,22 @@ export class LeadershipComponent {
     },
     {
       name: 'Raman Johar',
+      phone: '',
+      email: '',
+      title: '',
+      content: '',
+      // img: ''
+    },
+    {
+      name: 'Trilochan Singh',
+      phone: '',
+      email: '',
+      title: '',
+      content: '',
+      // img: ''
+    },
+    {
+      name: 'Goldy Gill',
       phone: '',
       email: '',
       title: '',

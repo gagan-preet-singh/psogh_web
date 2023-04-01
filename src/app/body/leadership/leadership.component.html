@@ -1,5 +1,5 @@
-<div id="container" style="display:flex; flex-direction: row; flex-wrap: wrap;">
-    <mat-card *ngFor="let member of members" style="margin-top: 10px; margin-left: 20px; margin-right: 20px; width: 200px;">
+<div id="container" style="display:flex; flex-direction: row; flex-wrap: wrap; max-width: 900px;">
+    <mat-card *ngFor="let member of members" style="margin-top: 10px; margin-left: 20px; margin-right: 20px; width: 250px;">
         <mat-card-header>
             <mat-card-title>{{member.name}}</mat-card-title>
             <mat-card-subtitle *ngIf="member.title != ''">{{member.title}}</mat-card-subtitle>

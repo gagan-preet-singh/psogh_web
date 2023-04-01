@@ -5,6 +5,8 @@ import { GalleryComponent } from './gallery.component';
 describe('GalleryComponent', () => {
   let component: GalleryComponent;
   let fixture: ComponentFixture<GalleryComponent>;
+  let nav: boolean = false;
+  let counter: boolean = false;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({

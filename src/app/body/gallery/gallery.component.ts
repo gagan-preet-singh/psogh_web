@@ -11,6 +11,8 @@ export class GalleryPageComponent implements OnInit {
   galleryId = 'mainGallery';
   galleryId2 = 'mainGalleryDisplay';
   gallery_images: GalleryItem[] = [];
+  nav: boolean = false;
+  counter: boolean = false;
 
   constructor(private _gallery: Gallery, private _lightbox: Lightbox) { }
 
